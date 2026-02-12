@@ -1,0 +1,44 @@
+@import url('https://use.typekit.net/ik/61-q0FawBJ10LE9c7WJXwmV6_eb6Y9YthFT-bCD9Fw6fentgfFHN4UJLFRbh52jhWD9t5QmqFR4qwRqoFeFy52ZKweFq5Q63FUGMJ6U3ScNt-AuyOAozicIKIcBqdh48OAiyScBldhoqOWgkdkG4f5J7IMMjMkMfH6qJn3IbMg6IJMJ7fbKlMsMMeMj6MKG4fJCgIMMjgkMfH6qJn6IbMg6bJMJ7fbKwMsMMegI6MKG4fVwXIMIjgfMfH6qJv2bbMs6YJMJ7fbRkFgMgeMt6MKG4fVIXIMIjIPMfqMYS7vPog6.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #3D9991;
+  --accent: #3D9991;
+  --background: #1F1F1F;
+  --textPrimary: #1F1F1F;
+  --link: #3D9991;
+}
+
+@layer base {
+  html {
+    font-family: 'proxima-nova', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    @apply text-textPrimary;
+    font-family: 'proxima-nova', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'adobe-garamond-pro', Georgia, serif;
+  }
+}
+
+@layer components {
+  .font-heading {
+    font-family: 'adobe-garamond-pro', Georgia, serif;
+  }
+  
+  .font-body {
+    font-family: 'proxima-nova', system-ui, sans-serif;
+  }
+
+  .btn-link {
+    @apply text-primary hover:underline transition-all;
+  }
+}
